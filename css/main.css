@@ -93,7 +93,21 @@ textarea {
     align-items: center;
     font-family: "Open Sans", sans-serif;
     color: #20175d;
-    background: #debbf3
+    background: linear-gradient(-45deg, #deb0f1, #ff96f6, #dd88ff);
+    background-size: 400% 400%;
+    animation: gradient 6s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
   
   .container {
@@ -124,7 +138,7 @@ textarea {
     margin-top: 1.5em;
     text-align: center;
     color: white;
-    background-color: #ed59d2;
+    background-color: #f48be0;
     font-family: sans-serif;
     font-weight: bold;
     outline: none;
@@ -132,6 +146,10 @@ textarea {
     text-transform: uppercase;
     max-width: 300px;
     border: outset 2px black;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
   }
   
   button:hover {
